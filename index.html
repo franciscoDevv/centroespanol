@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Español</title>
+    <link rel="stylesheet" href="src/css/main.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Centro Español</a>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="zona1"></section>
+    
+    <!-- Añadir margin luego -->
+    <section class="slider">
+       <div class="slider__container container">
+           <img src="assets/img/left-arrow.svg" class="slider_arrow" id="before" alt="">
+
+            <section class="slider__body slider__body--show" data-id="1">
+                <div class="images-container">
+                    <img class="slider__images" src="assets/img/bg1.jpg" alt="">
+                </div>
+            </section>
+
+            <section class="slider__body" data-id="2">
+                <div class="images-container">
+                    <img class="slider__images" src="assets//img/img2.jpg" alt="">
+                </div>
+            </section>
+
+            <section class="slider__body" data-id="3">
+                <div class="images-container">
+                    <img class="slider__images" src="assets/img/img3.jpg" width="70%" alt="">
+                </div>
+            </section>
+
+           <img src="assets/img/right-arrow.svg" class="slider_arrow" id="after" alt="">
+       </div>
+    </section>
+    
+    <script src="src/js/slider.js"></script>
+    <script src="src/js/scroll.js"></script>
+</body>
+</html>
