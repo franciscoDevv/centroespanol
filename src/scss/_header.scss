@@ -1,0 +1,85 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: .7s;
+    padding: 30px 20px;
+    z-index: 10;
+}
+
+header.abajo {
+    background-color: #fff;
+    padding: 30px 20px;
+    transition: .7s;
+}
+
+header.logo {
+    position: relative;
+    columns: #fff;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: .7s;
+}
+
+.logo {
+    color: #fff;
+}
+
+.zona1 {
+    position: relative;
+	width: 100%;
+	height: 100vh;
+	//background: url(cat.jpg);
+    background-image: linear-gradient(rgba(5, 10, 5, 0.8), rgba(223, 46, 46, 0.4)), url(../../assets/img/bg1.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+header.abajo .logo,
+header.abajo ul li a{
+		color: #000;
+}
+
+.content {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content div {
+    color: white;
+    font-family: 'Source Serif 4', sans-serif;
+    text-align: center;
+}
