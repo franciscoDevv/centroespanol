@@ -7,6 +7,7 @@
     <title>Centro Español</title>
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -30,7 +31,7 @@
     </section>
     
     <!-- Sldier -->
-    <section class="slider">
+    <section class="slider" data-aos="fade-up" data-aos-duration="1000">
        <div class="slider__container container">
            <img src="assets/img/left-arrow.svg" class="slider_arrow" id="before" alt="">
 
@@ -61,7 +62,7 @@
         <div class="text">
             <h2>Servicios</h2>
         </div>
-        <div class="cards">
+        <div class="cards" data-aos="fade-up" data-aos-duration="1000">
             <div>
                 <h4>Restaurant</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio laborum sed deserunt doloremque. Excepturi officia veritatis aut in optio voluptatum fugit voluptatem eligendi quas labore eveniet, delectus hic nesciunt sunt.</p>
@@ -72,8 +73,23 @@
             </div>
         </div>
     </section>
+
+    <!-- Contacto -->
+    <div class="form" data-aos="fade-up" data-aos-duration="1000">
+                <form>
+                    <h1>Contactanos</h1>
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="correo">
+                    <textarea placeholder="Mensaje"></textarea>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+    </div>
     
     <script src="src/js/slider.js"></script>
     <script src="src/js/scroll.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
