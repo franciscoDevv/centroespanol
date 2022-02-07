@@ -13,6 +13,10 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+.black li a {
+  color: black;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -257,6 +261,80 @@ form {
 iframe {
   width: 525px;
   height: 525px;
+}
+
+.navegacion ul {
+  list-style: none;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu > li > a {
+  display: block;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: #CE7D35;
+  transition: all 0.3s;
+}
+
+/* Submenu*/
+.submenu {
+  position: absolute;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.7s;
+  font-family: "Raleway";
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.white2 {
+  color: #fff;
+}
+
+.menu li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.context {
+  height: 100vh;
+  width: 100%;
+  margin: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.content div {
+  margin: 30px;
+}
+
+.preventions {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.preventions div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */

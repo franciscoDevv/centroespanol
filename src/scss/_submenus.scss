@@ -1,0 +1,44 @@
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+}
+
+.menu > li > a{
+	display: block;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .7s;
+    font-family: 'Raleway';
+}
+
+.submenu li a{
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.white2 {
+    color: #fff;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}

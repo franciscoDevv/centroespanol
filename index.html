@@ -11,25 +11,38 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo"><img src="assets/img/logo.png" height="50" alt=""></a>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <a href="#" class="logo"><img src="assets/img/logo.png" height="70" alt=""></a>
+        <nav class="navegacion">
+			<ul class="menu">
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Nosotros</a>
+                    <ul class="submenu white2">
+						<li><a href="contextohistorico.html">Contexto Histórico</a></li>
+					</ul></li>
+				<li><a href="#services">Servicios</a>
+				</li>
+				<li><a href="#contacto">Contacto</a></li>
+			</ul>
+		</nav>
     </header>
     <section class="zona1">
         <div class="content">
             <div>
                 <h1>Centro Español</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, harum!</p>
+                <p>¡Reapertura el --/--/--!</p>
             </div>
         </div>
     </section>
     
+
+    <!-- Covid Preventions -->
+    <section class="preventions">
+        <div>
+            <p>Por la presente pandemia, debemos cumplir con las medidas sanitarias exigidas por el ministerio de Salud.</p>
+            <img src="assets/img/prevention.png" height="300px" draggable="false" alt="">
+            <img src="assets/img/prevention2.jpg" height="275px" draggable="false" alt="">
+        </div>
+    </section>
     <!-- Sldier -->
     <section class="slider" data-aos="fade-up" data-aos-duration="1500">
        <div class="slider__container container">
@@ -79,7 +92,7 @@
                 <form>
                     <h1>Contactanos</h1>
                     <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="correo">
+                    <input type="text" placeholder="Correo">
                     <textarea placeholder="Mensaje"></textarea>
                     <button type="submit" class="btn">Enviar</button>
                 </form>
