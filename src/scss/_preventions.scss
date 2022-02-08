@@ -1,3 +1,7 @@
+body.problem {
+    height: 100vh;
+}
+
 .preventions {
     height: 100vh;
     width: 100%;
@@ -8,6 +12,40 @@
 }
 
 .preventions div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.protocol {
+    color: #fff;
+    font-size: small;
+}
+
+.align-center {
+    vertical-align: middle;
+}
+
+.protocolo {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.protocolo div {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-imgs {
     display: flex;
     flex-direction: column;
     justify-content: center;

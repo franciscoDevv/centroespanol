@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -19,9 +20,19 @@
                     <ul class="submenu white2">
 						<li><a href="contextohistorico.html">Contexto Histórico</a></li>
 					</ul></li>
-				<li><a href="#services">Servicios</a>
+				<li><a href="servicios.html">Servicios</a>
+                    <ul class="submenu white2">
+                        <li><a href="#">Carta</a></li>
+                        <li><a href="#">Menú Ejecutivo</a></li>
+                        <li><a href="#">Delivery</a></li>
+                    </ul>
 				</li>
-				<li><a href="#contacto">Contacto</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+                <li class="align-center" style="margin-top: 5px;"><a href=""><img src="assets/img/mascarilla.png" height="34px" alt=""></a>
+                    <ul class="submenu">
+                        <li><a href="https://www.minsal.cl/" target="_blank">Protocolo Covid-19</a></li>
+                    </ul>
+                </li>
 			</ul>
 		</nav>
     </header>
@@ -31,75 +42,26 @@
                 <h1>Centro Español</h1>
                 <p>¡Reapertura el --/--/--!</p>
             </div>
-        </div>
+        </div>   
     </section>
+    <footer>
+            <div class="footer-container">
+                <div class="start">
+                    <div>
+                       <p> Arauco 555, Chillan, Ñuble.</p>
+                    </div>
+                </div>
+                <div class="end">
+                    <div>
+                        <i class="fab fa-instagram fa-2x"></i>
+                        <i class="fab fa-whatsapp fa-2x"></i>
+                        <i class="far fa-envelope fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+    </footer>
     
-
-    <!-- Covid Preventions -->
-    <section class="preventions">
-        <div>
-            <p>Por la presente pandemia, debemos cumplir con las medidas sanitarias exigidas por el ministerio de Salud.</p>
-            <img src="assets/img/prevention.png" height="300px" draggable="false" alt="">
-            <img src="assets/img/prevention2.jpg" height="275px" draggable="false" alt="">
-        </div>
-    </section>
     <!-- Sldier -->
-    <section class="slider" data-aos="fade-up" data-aos-duration="1500">
-       <div class="slider__container container">
-           <img src="assets/img/left-arrow.svg" class="slider_arrow" id="before" alt="">
-
-            <section class="slider__body slider__body--show" data-id="1">
-                <div class="images-container">
-                    <img class="slider__images" src="assets/img/bg1.jpg" alt="">
-                </div>
-            </section>
-
-            <section class="slider__body" data-id="2">
-                <div class="images-container">
-                    <img class="slider__images" src="assets//img/img2.jpg" alt="">
-                </div>
-            </section>
-
-            <section class="slider__body" data-id="3">
-                <div class="images-container">
-                    <img class="slider__images" src="assets/img/img3.jpg" width="70%" alt="">
-                </div>
-            </section>
-
-           <img src="assets/img/right-arrow.svg" class="slider_arrow" id="after" alt="">
-       </div>
-    </section>
-
-    <!-- Servicios -->
-    <section class="services" id="services">
-        <div class="text">
-            <h2>Servicios</h2>
-        </div>
-        <div class="cards" data-aos="fade-up" data-aos-duration="1500">
-            <div>
-                <h4>Restaurant</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio laborum sed deserunt doloremque. Excepturi officia veritatis aut in optio voluptatum fugit voluptatem eligendi quas labore eveniet, delectus hic nesciunt sunt.</p>
-            </div>
-            <div>
-                <h4>Centro de Eventos</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, est minus quos, voluptatem rerum neque libero nulla exercitationem necessitatibus eius beatae earum temporibus officiis dolore.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contacto -->
-    <div class="form" id="contacto" data-aos="fade-up" data-aos-duration="1500">
-                <form>
-                    <h1>Contactanos</h1>
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Correo">
-                    <textarea placeholder="Mensaje"></textarea>
-                    <button type="submit" class="btn">Enviar</button>
-                </form>
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.6088107246105!2d-72.10357458736371!3d-36.607465529888444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9668d7d64901fc01%3A0xd969a7cafecbdf96!2sCentro%20Espa%C3%B1ol!5e0!3m2!1ses!2scl!4v1643832442022!5m2!1ses!2scl" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-    </div>
     
     <script src="src/js/slider.js"></script>
     <script src="src/js/scroll.js"></script>

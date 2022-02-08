@@ -77,7 +77,7 @@ header ul li a {
 .zona1 {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-image: linear-gradient(rgba(5, 10, 5, 0.8), rgba(223, 46, 46, 0.4)), url(../../assets/img/bg1.jpg);
   background-size: cover;
   background-position: center center;
@@ -176,6 +176,10 @@ header.abajo ul li a {
   width: 70%;
 }
 
+.services {
+  margin-top: 95px;
+}
+
 .text {
   display: flex;
   justify-content: center;
@@ -204,7 +208,8 @@ header.abajo ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
+  margin-top: 50px;
   width: 100%;
 }
 
@@ -216,8 +221,8 @@ header.abajo ul li a {
 form {
   display: flex;
   flex-direction: column;
-  width: 35%;
-  height: 70%;
+  width: 300px;
+  height: 350px;
   padding: 20px;
   justify-content: center;
   align-items: center;
@@ -259,8 +264,8 @@ form {
 }
 
 iframe {
-  width: 525px;
-  height: 525px;
+  width: 500px;
+  height: 400px;
 }
 
 .navegacion ul {
@@ -306,19 +311,28 @@ iframe {
   opacity: 1;
 }
 
+.black a {
+  color: black;
+}
+
 .context {
-  height: 100vh;
-  width: 100%;
+  height: 85vh;
+  width: 95%;
   margin: 10px;
 }
 
 .content {
   display: flex;
+  width: 100%;
   flex-direction: row;
 }
 
 .content div {
   margin: 30px;
+}
+
+body.problem {
+  height: 100vh;
 }
 
 .preventions {
@@ -335,6 +349,101 @@ iframe {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.protocol {
+  color: #fff;
+  font-size: small;
+}
+
+.align-center {
+  vertical-align: middle;
+}
+
+.protocolo {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.protocolo div {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-imgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #fff;
+  margin-top: 0;
+  height: 10vh;
+  width: 100%;
+}
+
+.footer-container {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+footer .end {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+
+footer .start {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+footer .start div {
+  margin-left: 30px;
+}
+
+footer .end div {
+  margin-right: 30px;
+}
+
+footer .end div i {
+  padding: 0 5px;
+}
+
+.fa-instagram {
+  color: #833AB4;
+  transition: 0.7s all;
+}
+
+.fa-whatsapp {
+  color: #25D366;
+}
+
+.fa-envelope {
+  color: #c71610;
+}
+
+div i {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
