@@ -17,6 +17,10 @@ body {
   color: black;
 }
 
+.whiteicon {
+  color: #fff;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -27,6 +31,14 @@ header {
   transition: 0.7s;
   padding: 30px 20px;
   z-index: 10;
+}
+
+header .black2 {
+  background-color: rgba(5, 10, 5, 0.5);
+}
+
+.black {
+  width: 100%;
 }
 
 header.abajo {
@@ -78,7 +90,7 @@ header ul li a {
   position: relative;
   width: 100%;
   height: 90vh;
-  background-image: linear-gradient(rgba(5, 10, 5, 0.8), rgba(223, 46, 46, 0.4)), url(../../assets/img/bg1.jpg);
+  background-image: linear-gradient(rgba(5, 10, 5, 0.9), rgba(223, 46, 46, 0.65)), url(../../assets/img/bg1.jpg);
   background-size: cover;
   background-position: center center;
 }
@@ -100,6 +112,26 @@ header.abajo ul li a {
   color: white;
   font-family: "Source Serif 4", sans-serif;
   text-align: center;
+}
+
+button {
+  padding: 7px;
+  border-radius: 10px;
+  background-color: rgba(223, 46, 46, 0.9);
+  border: none;
+  color: white;
+  font-family: "Raleway";
+  cursor: pointer;
+}
+
+.big-text h1 {
+  font-size: 40px;
+}
+
+.big-text p {
+  font-size: 15px;
+  font-family: "Raleway";
+  font-weight: 400;
 }
 
 .container {
@@ -177,7 +209,7 @@ header.abajo ul li a {
 }
 
 .services {
-  margin-top: 95px;
+  margin-top: 200px;
 }
 
 .text {
@@ -206,6 +238,7 @@ header.abajo ul li a {
 
 .form {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 90vh;
@@ -215,6 +248,9 @@ header.abajo ul li a {
 
 .form-container {
   height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
 }
 
@@ -231,8 +267,8 @@ form {
 
 input, textarea {
   font-family: "Raleway";
-  border: none;
   resize: none;
+  border: none;
   outline: none;
   border: 2px;
   padding: 15 0px;
@@ -266,6 +302,10 @@ form {
 iframe {
   width: 500px;
   height: 400px;
+}
+
+.fa-whatsapp:before {
+  color: #fff;
 }
 
 .navegacion ul {
@@ -318,7 +358,7 @@ iframe {
 .context {
   height: 85vh;
   width: 95%;
-  margin: 10px;
+  margin: 10 0px;
 }
 
 .content {
@@ -444,6 +484,10 @@ footer .end div i {
 
 div i {
   cursor: pointer;
+}
+
+.fa-white {
+  color: #25D366;
 }
 
 /*# sourceMappingURL=main.css.map */
