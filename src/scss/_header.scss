@@ -1,12 +1,12 @@
 header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100wh;
     display: flex;
     justify-content: space-around;
     transition: .7s;
-    padding: 30px 20px;
+    padding: 25px 0px;
     z-index: 10;
 }
 
@@ -81,11 +81,15 @@ header.abajo ul li a{
 .content {
     height: 100vh;
     width: 100%;
+    margin-top: -110px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+footer {
+    padding-top: 15px;
+}
 .content div {
     color: white;
     font-family: 'Source Serif 4', sans-serif;

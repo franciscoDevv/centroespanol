@@ -7,6 +7,12 @@ html {
 }
 body {
     font-family: 'Raleway', sans-serif;
+    width: 100vw;
+}
+
+header {
+    position: relative;
+    width: 100vw;
 }
 
 .black li a {
@@ -15,4 +21,27 @@ body {
 
 .whiteicon {
     color: #fff;
+}
+
+.logo {
+    height: 150px;
+}
+
+.black2 {
+    position: absolute;
+    max-width: 100wv;
+    justify-content: space-around;
+}
+
+.content2 {
+     height: 100vh;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-facebook {
+    color: #4267B2;
 }

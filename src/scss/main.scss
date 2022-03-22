@@ -2,10 +2,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@1,300&display=swap');
 @import 'generals';
 @import 'header';
-@import 'slider';
 @import 'services';
 @import 'form';
 @import 'submenus';
 @import 'context';
 @import 'preventions';
 @import 'footer';
+@import 'responsive';
+
+.none {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        width: 100wv;
+    }
+    .none {
+        display: block;
+    }
+    header {
+        margin: auto;
+        position: absolute;
+    }
+    .text {
+        padding-top: 60px;
+    }
+    .cards {
+        flex-direction: column;
+        padding: 60px;
+        div {
+            margin: 10px;
+            width: 200px;
+        }
+    }
+  }
