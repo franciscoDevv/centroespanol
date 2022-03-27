@@ -1,12 +1,12 @@
 footer {
     background-color: #fff;
-    border-top: rgba(0, 0, 0, .5);
+    border-top: 1px rgba(0, 0, 0, .35) solid;
     margin-top: 0;
     height: 10vh;
     width: 100%;
 }
 
-.footer-container {
+.footer-container { 
     height: 10vh;
     width: 100%;
     display: flex;
