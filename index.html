@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://kit.fontawesome.com/a9383e6fb2.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="home">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <a href="https://api.whatsapp.com/send?phone=5195508107&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
@@ -21,6 +22,7 @@
     <header class="black2">
         <a href="#" class="logo"><img src="assets/img/logowhite.png" height="150" alt="White logo"></a>
         <nav class="navegacion">
+            <button id="hamburguer"><span></span><span></span><span></span></button>
 			<ul class="menu">
 				<li><a href="#" style="color: white">Inicio</a></li>
 		    	<li style="color: white"><a href="historia.html" style="color: white">Historia</a></li>
@@ -41,15 +43,28 @@
 			</ul>
 		</nav>
     </header>
+    
     <section class="zona1">
+        <div class="overlay">
+            <div class="nav-responsive">
+                <div><a href="index.html">Inicio</a></div>
+                <div><a href="historia.html">Historia</a></div>
+                <div><a href="#">Carta</a></div>
+                <div><a href="contacto.html">Contacto</a></div>
+                <div><button>Delivery</button></div>
+            </div>
+        </div>
         <div class="content2">
+            
             <div class="big-text">
                 <a href="#" class="none"><button>Delivery</button></a>
                 <h1>Centro Español</h1>
                 <p>Bienvenidos a La Centro Español, un lugar donde podrás disfrutar la mejor y más tradicional cocina chilena, con la calidad y hospitalidad <br> que durante años nos han caracterizado.Con casi cuatro décadas de trayectoria,
                     nos hemos transformado en un clásico <br> de lo criollo y en uno de los más prestigiosos restaurantes del país.</p>
             </div>
-        </div>   
+        
+        </div> 
+    
     </section>
     <footer>
             <div class="footer-container">
@@ -68,9 +83,7 @@
             </div>
     </footer>
     
-    <!-- Sldier -->
-    
-    <script src="src/js/slider.js"></script>
+    <script src="src/js/hamburguer.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

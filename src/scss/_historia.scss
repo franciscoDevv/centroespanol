@@ -2,6 +2,7 @@
     height: 85vh;
     width: 95%;
     margin:   10 0px;
+    margin-top: 10px;
 }
 .content {
     display: flex;
@@ -11,4 +12,13 @@
 
 .content div{
     margin: 30px;
+}
+
+@media (max-width: 600px) {
+    .frontis {
+        height: 150px;
+    }
+    .content {
+        flex-direction: column;
+    }
 }

@@ -1,3 +1,39 @@
+#hamburguer {
+  color:white;
+  display: none;
+  z-index: 1000;
+}
+
+.none {
+  display: none;
+}
+
+.home {
+  height: 100vh;
+}
+
+
+.overlay.see{
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 100;
+  height: 110vh;
+  
+ 
+}
+
+.overlay {
+  display: none;
+  width: 100vh;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 100;
+  height: 100vh;
+}
+
+
+
 @media only screen and (max-width: 850px) {
   body {
     max-width: 100vw;
@@ -7,11 +43,33 @@
   }
   header {
     margin-left: -55px;
+
   }
   .menu {
-    display: blocK;
+    display: none;
     padding: 10px;
   }
+  #hamburguer {
+    display: block;
+  }
+  .nav-responsive {
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    div {
+      color: white;
+      font-size: 20px;
+      margin: 15px 0;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+  
   .responsive {
     display: none;
   }
@@ -26,11 +84,28 @@
   }
   .float {
       bottom:100px;
-      left: 340px;
+      left: 250px;
 
+  }
+  .start{
+
+   margin-left: -20px;
+  }
+  .end {
+    margin-right: 5px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 20px;
   }
   iframe {
     width: 350px;
+  }
+  .start div b p {
+    font-size: 15px;
   }
 
 }

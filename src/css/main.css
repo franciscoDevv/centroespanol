@@ -51,7 +51,7 @@ header {
 }
 
 header {
-  position: relative;
+  position: inherit;
   top: 0;
   left: 0;
   width: 100wh;
@@ -166,6 +166,27 @@ button {
   font-size: 15px;
   font-family: "Raleway";
   font-weight: 400;
+}
+
+.bars {
+  color: #fff;
+}
+
+#hamburguer {
+  background-color: none;
+}
+
+#hamburguer span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 6px;
+  z-index: 1;
+  transform-origin: 0 0;
+  transform: 0.4s;
 }
 
 .text {
@@ -338,6 +359,7 @@ iframe {
   height: 85vh;
   width: 95%;
   margin: 10 0px;
+  margin-top: 10px;
 }
 
 .content {
@@ -350,6 +372,15 @@ iframe {
   margin: 30px;
 }
 
+@media (max-width: 600px) {
+  .frontis {
+    height: 150px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+}
 body.problem {
   height: 100vh;
 }
@@ -470,6 +501,37 @@ div i {
   color: #25D366;
 }
 
+#hamburguer {
+  color: white;
+  display: none;
+  z-index: 1000;
+}
+
+.none {
+  display: none;
+}
+
+.home {
+  height: 100vh;
+}
+
+.overlay.see {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  height: 110vh;
+}
+
+.overlay {
+  display: none;
+  width: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  height: 100vh;
+}
+
 @media only screen and (max-width: 850px) {
   body {
     max-width: 100vw;
@@ -484,8 +546,30 @@ div i {
   }
 
   .menu {
-    display: blocK;
+    display: none;
     padding: 10px;
+  }
+
+  #hamburguer {
+    display: block;
+  }
+
+  .nav-responsive {
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-responsive div {
+    color: white;
+    font-size: 20px;
+    margin: 15px 0;
+  }
+  .nav-responsive div a {
+    color: #fff;
+    text-decoration: none;
   }
 
   .responsive {
@@ -505,11 +589,31 @@ div i {
 
   .float {
     bottom: 100px;
-    left: 340px;
+    left: 250px;
+  }
+
+  .start {
+    margin-left: -20px;
+  }
+
+  .end {
+    margin-right: 5px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 20px;
   }
 
   iframe {
     width: 350px;
+  }
+
+  .start div b p {
+    font-size: 15px;
   }
 }
 .none {
@@ -519,10 +623,6 @@ div i {
 @media (max-width: 600px) {
   body {
     width: 100wv;
-  }
-
-  .none {
-    display: block;
   }
 
   header {
@@ -541,6 +641,10 @@ div i {
   .cards div {
     margin: 10px;
     width: 200px;
+  }
+
+  .context {
+    margin-top: 160px;
   }
 }
 

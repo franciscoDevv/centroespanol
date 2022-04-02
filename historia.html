@@ -21,6 +21,7 @@
     <header>
         <a href="index.html" class="logo"><img src="assets/img/logo.png" style="margin-top: 0px" height="150" alt=""></a>
         <nav class="navegacion">
+            <button id="hamburguer"><span></span><span></span><span></span></button>
 			<ul class="menu black">
 				<li><a href="index.html">Inicio</a></li>
                    
@@ -41,7 +42,17 @@
 			</ul>
 		</nav>
     </header>
+    <div class="overlay">
+        <div class="nav-responsive">
+            <div><a href="index.html">Inicio</a></div>
+            <div><a href="historia.html">Historia</a></div>
+            <div><a href="#">Carta</a></div>
+            <div><a href="contacto.html">Contacto</a></div>
+            <div><button>Delivery</button></div>
+        </div>
+    </div>
     <section class="context">
+       
         <div class="content">
             <div>
                 <h3 style="color: black">Contexto Histórico</h3>
@@ -49,7 +60,7 @@
                     . Los invitamos a ser parte de nuestra identidad culinaria y a explorar los sabores de la auténtica cocina chilena.</p>
             </div>
             <div>
-                <img src="assets/img/img2.jpg" height="400" alt="">
+                <img src="assets/img/img2.jpg" height="400" class="frontis" alt="">
             </div>
         </div>
     </section>
@@ -70,5 +81,6 @@
             </div>
         </div>
 </footer>
+<script src="src/js/hamburguer.js"></script>
 </body>
 </html>
