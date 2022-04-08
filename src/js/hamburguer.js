@@ -5,5 +5,5 @@ const context = document.querySelector(".context");
 hamburguerButton.addEventListener('click', () => {
     overlay.classList.toggle("see");
     content.classList.toggle("none");
-    content.classList.toggle("none");
+    context.classList.toggle("none");
 })
